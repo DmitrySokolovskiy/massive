@@ -2,13 +2,13 @@ package by.massive.homework;
 
 import by.massive.universal.Util;
 
-public class Exercise1 {
+public class Exercise15 {
     public static void main(String[] args) {
-
-        int[][] mass = new int[3][4];
+        int n = 7;
+        int[][] mass = new int[n][n];
 
         for (int i = 0; i < mass.length; i++) {
-            mass[i][0] = 1;
+            mass[i][i] = n - i;
         }
         Util.arrayPrinter(mass, 2);
     }

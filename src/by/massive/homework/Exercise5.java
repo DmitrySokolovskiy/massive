@@ -1,0 +1,23 @@
+package by.massive.homework;
+
+import java.util.Random;
+
+public class Exercise5 {
+    public static void main(String[] args) {
+        int n = 7;
+        int[][] mass = new int[n][n];
+        Random rnd = new Random();
+
+        for (int i = 0; i < mass.length; i++) {
+            for (int j = 0; j < mass[i].length; j++) {
+                mass[i][j] = rnd.nextInt(9);
+            }
+        }
+        for (int i = 0; i < mass.length; i++) {
+            for (int j = 0; j < mass[i].length; j +=2) {
+                System.out.printf("%2d", mass[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
